@@ -4,21 +4,24 @@
 
     <title>Frameless Window</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="titlebar.js"></script>
-    <script src="frameless_window.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/titlebar.js"></script>
+    <script src="js/frameless_window.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   </head>
 
   <body>
+    <div class="title">
+        <div class="label label-default">TodoTodo
+        </div>
+    </div>
+    <div>
 
-    <div id="content">
-
-      <div id="inner-content">
-
+    <div>
         Select the titlebar to enable:<br/>
         <input type="checkbox" id="top-box">Top Titlebar <br/>
-        <input type="checkbox" id="bottom-box">Bottom Titlebar <br/>
+        <!-- <input type="checkbox" id="bottom-box">Bottom Titlebar <br/>
         <input type="checkbox" id="left-box">Left Titlebar <br/>
         <input type="checkbox" id="right-box">Right Titlebar <br/>
         <br/>
@@ -28,7 +31,7 @@
         <button id="maximize-window-button">Maximize Window</button>
         <button id="unmaximize-window-button">Restore Window</button>
         <button id="toggle-window-button">Toggle FullScreen</button>
-        <button id="maxmin-window-button">Toggle Maximized</button> <br/>
+        <button id="maxmin-window-button">Toggle Maximized</button> <br/> -->
 
         <button id="min">_</button>
         <button id="max">=</button>

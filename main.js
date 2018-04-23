@@ -1,5 +1,5 @@
 const {app, BrowserWindow} = require('electron');
-
+const { Bootstrap } = require('bootstrap');
 let mainWindow;
 
 // Quit when all windows are closed.
@@ -14,7 +14,7 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({width: 360, height: 300, frame: false});
 
   // and load the index.html of the app.
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
+  mainWindow.loadURL('file://' + __dirname + '/todo/index.html');
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {

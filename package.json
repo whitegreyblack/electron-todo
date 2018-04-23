@@ -1,12 +1,11 @@
 {
   "name": "frameless-todo-app",
   "version": "0.0.1",
-  "main": "main.js",
+  "main": "todo/main.js",
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.1.0",
-    "g": "^2.0.1",
     "jquery": "^3.3.1",
-    "popper": "^1.0.1",
     "popper.js": "^1.14.3"
   }
 }
