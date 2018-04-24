@@ -58,7 +58,7 @@ window.onresize = function() {
 }
 
 window.onload = function() {
-  initTitleBar("top-box", "top-titlebar", "static/tasks.png", "Top Titlebar");
+  // initTitleBar("top-box", "top-titlebar", "static/tasks.png", "Top Titlebar");
   initCheckbox("top-box", "top-titlebar", "top-titlebar.png", "Top Titlebar");
   initCheckbox("bottom-box", "bottom-titlebar", "bottom-titlebar.png", "Bottom Titlebar");
   initCheckbox("left-box", "left-titlebar", "left-titlebar.png", "Left Titlebar");
