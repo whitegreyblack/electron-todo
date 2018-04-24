@@ -40,7 +40,7 @@ function initTitleBar(checkboxId, titlebar_name, titlebar_icon_url, titlebar_tex
   // addTitlebar(titlebar_name, titlebar_icon_url, titlebar_text);
   focusTitlebars(true);
   updateContentStyle();
-  updateCheckbox();
+  // updateCheckbox();
 }
 
 window.onfocus = function() {
@@ -58,11 +58,11 @@ window.onresize = function() {
 }
 
 window.onload = function() {
-  // initTitleBar("top-box", "top-titlebar", "static/tasks.png", "Top Titlebar");
-  initCheckbox("top-box", "top-titlebar", "top-titlebar.png", "Top Titlebar");
-  initCheckbox("bottom-box", "bottom-titlebar", "bottom-titlebar.png", "Bottom Titlebar");
-  initCheckbox("left-box", "left-titlebar", "left-titlebar.png", "Left Titlebar");
-  initCheckbox("right-box", "right-titlebar", "right-titlebar.png", "Right Titlebar");
+  initTitleBar("top-box", "top-titlebar", "static/tasks.png", "Top Titlebar");
+  // initCheckbox("top-box", "top-titlebar", "top-titlebar.png", "Top Titlebar");
+  // initCheckbox("bottom-box", "bottom-titlebar", "bottom-titlebar.png", "Bottom Titlebar");
+  // initCheckbox("left-box", "left-titlebar", "left-titlebar.png", "Left Titlebar");
+  // initCheckbox("right-box", "right-titlebar", "right-titlebar.png", "Right Titlebar");
 
   const {remote} = require('electron');
   const {BrowserWindow} = remote;

@@ -98,19 +98,19 @@ function updateContentStyle() {
     height -= titlebar.offsetHeight;
     top += titlebar.offsetHeight;
   }
-  titlebar = document.getElementById("bottom-titlebar");
-  if (titlebar) {
-    height -= titlebar.offsetHeight;
-  }
-  titlebar = document.getElementById("left-titlebar");
-  if (titlebar) {
-    width -= titlebar.offsetWidth;
-    left += titlebar.offsetWidth;
-  }
-  titlebar = document.getElementById("right-titlebar");
-  if (titlebar) {
-    width -= titlebar.offsetWidth;
-  }
+  // titlebar = document.getElementById("bottom-titlebar");
+  // if (titlebar) {
+  //   height -= titlebar.offsetHeight;
+  // }
+  // titlebar = document.getElementById("left-titlebar");
+  // if (titlebar) {
+  //   width -= titlebar.offsetWidth;
+  //   left += titlebar.offsetWidth;
+  // }
+  // titlebar = document.getElementById("right-titlebar");
+  // if (titlebar) {
+  //   width -= titlebar.offsetWidth;
+  // }
 
   var contentStyle = "position: absolute; ";
   contentStyle += "left: " + left + "px; ";

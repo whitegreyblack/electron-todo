@@ -165,7 +165,7 @@ div#inner-content {
   margin-right: 6px;
   -webkit-app-region: no-drag;
 }
-
+*/
 .top-titlebar-divider {
   position: absolute;
   left: 0px;
@@ -174,7 +174,7 @@ div#inner-content {
   height: 1px;
   background-color: #2a2c2c;
 }
-
+/*
 .bottom-titlebar-divider {
   position: absolute;
   left: 0px;
