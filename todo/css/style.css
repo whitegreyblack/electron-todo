@@ -1,9 +1,10 @@
-/* html {
+html {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
 }
 
+/*
 body {
   margin: 0px;
   padding: 0px;
@@ -30,7 +31,6 @@ div#inner-content {
   width: 100%;
   height: 100%;
 }
-*/
 .top-titlebar {
   position: absolute;
   left: 0px;
@@ -41,7 +41,6 @@ div#inner-content {
   -webkit-user-select: none;
   -webkit-app-region: drag;
 }
-/*
 .bottom-titlebar {
   position: absolute;
   left: 0px;
@@ -74,7 +73,6 @@ div#inner-content {
   -webkit-user-select: none;
   -webkit-app-region: drag;
 }
-*/
 .top-titlebar-icon,
 .bottom-titlebar-icon {
   position: absolute;
@@ -82,7 +80,6 @@ div#inner-content {
   margin-top: 6px;
   margin-bottom: 6px;
 }
-/*
 .left-titlebar-icon {
   position: absolute;
   bottom: 6px;
@@ -96,7 +93,6 @@ div#inner-content {
   margin-left: 6px;
   margin-right: 6px;
 }
-*/
 .top-titlebar-text,
 .bottom-titlebar-text {
   position: absolute;
@@ -108,7 +104,6 @@ div#inner-content {
   font-size: 11pt;
   color: #ffffff;
 }
-/*
 .left-titlebar-text {
   position: absolute;
   bottom: 32px;
@@ -134,7 +129,6 @@ div#inner-content {
   -webkit-transform: rotate(90deg) translate(0, 100%);
   -webkit-transform-origin: 0% 200%;
 }
-*/
 .top-titlebar-close-button,
 .bottom-titlebar-close-button {
   position: absolute;
@@ -145,7 +139,6 @@ div#inner-content {
   margin-bottom: 6px;
   -webkit-app-region: no-drag;
 }
-/*
 .left-titlebar-close-button {
   position: absolute;
   top: 11px;
