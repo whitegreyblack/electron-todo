@@ -7,16 +7,33 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="js/titlebar.js"></script>
     <script src="js/frameless_window.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <style>
+      #header {
+        margin: 5px;
+        /* text-align: center;
+        vertical-align: middle; */
+        background-color: #a0a0a0;
+        border: 2px solid black;
+      }
       .menu-button {
         float: right; 
         border-radius: 100px; 
         background-color: #888888;
         width: 1rem; 
         height :1rem;
-        margin: 5px 2px 5px 2px;
+        margin: 1px 2px 5px 2px;
+      }
+      .icon { 
+        float: left; 
+        border-radius: 100px; 
+        background-color: #888888;
+        width: 1rem; 
+        height :1rem;
+        margin: 1px 2px 5px 2px;
+      }
+      #title {
+        padding-bottom: 2px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
       .bg-yellow {
         background-color: #f1c40f; 
@@ -26,6 +43,9 @@
       }
       .bg-red {
         background-color:#cd201f;
+      }
+      #btn-close:active {
+        background-color:#bc0a0e;
       }
     </style>
   </head>
@@ -67,19 +87,14 @@
       <button id="max">=</button>
       <button id="exit">X</button>
     </div> -->
-    <div id="header">
-      <!-- <span style="display:inline;">
-        <input type="button" value="1"style="border-radius: 100px; background-color:#f1c40f; width:2rem; height:2rem;"/>
-        <input type="button" value="2"style="border-radius: 100px; background-color:#5eba00; width:2rem; height:2rem;"/>
-        <input type="button" value="2"style="border-radius: 100px; background-color:#cd201f; width:2rem; height:2rem;"/>
-      </span> -->
-      <div style="width:100%;display:inline; background-color: #a0a0a0">
+    <div id="content">
+      <div id="header">
         <div id="btn-close" class="menu-button bg-red"></div>
         <div id="btn-minify" class="menu-button bg-yellow"></div>
         <div id="btn-maxify" class="menu-button bg-green"></div>
+        <div class="icon bg-green"></div>
+        <div id="title" style="float: left">Todo List</div>
       </div>
-    </div>
-    <div id="content">
       <div id="inner-content">
       </div>
     </div>

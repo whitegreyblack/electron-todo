@@ -7,14 +7,14 @@ app.on('window-all-closed', function() {
 });
 
 app.on('browser-window-created', function(e, window) {
-  window.setMenu(null);
+  // window.setMenu(null);
 });
 
 // This method will be called when Electron has done everything
 // initialization and ready for creating browser windows.
 app.on('ready', function() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 375, height: 675, frame: false});
+  mainWindow = new BrowserWindow({width: 375, height: 675, maxWidth: 375, maxHeight: 675, frame: false});
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/todo/index.html');

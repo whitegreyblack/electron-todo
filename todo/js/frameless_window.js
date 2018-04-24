@@ -45,12 +45,12 @@ function initTitleBar(checkboxId, titlebar_name, titlebar_icon_url, titlebar_tex
 
 window.onfocus = function() {
   console.log("focus");
-  focusTitlebars(true);
+  // focusTitlebars(true);
 }
 
 window.onblur = function() {
   console.log("blur");
-  focusTitlebars(false);
+  // focusTitlebars(false);
 }
 
 window.onresize = function() {
@@ -58,49 +58,49 @@ window.onresize = function() {
 }
 
 window.onload = function() {
-  initTitleBar("top-box", "top-titlebar", "static/tasks.png", "Top Titlebar");
+  // initTitleBar("top-box", "top-titlebar", "static/tasks.png", "Top Titlebar");
   // initCheckbox("top-box", "top-titlebar", "top-titlebar.png", "Top Titlebar");
   // initCheckbox("bottom-box", "bottom-titlebar", "bottom-titlebar.png", "Bottom Titlebar");
   // initCheckbox("left-box", "left-titlebar", "left-titlebar.png", "Left Titlebar");
   // initCheckbox("right-box", "right-titlebar", "right-titlebar.png", "Right Titlebar");
-
   const {remote} = require('electron');
   const {BrowserWindow} = remote;
   const win = BrowserWindow.getFocusedWindow();
+  document.getElementById("content").onclick = function() {
+    console.log("CLICKED");
+  }
+  // document.getElementById("close-window-button").onclick = function() {
+  //   win.close();
+  // }
+  // document.getElementById("minimize-window-button").onclick = function() {
+  //   win.minimize();
+  // }
+  // document.getElementById("maximize-window-button").onclick = function() {
+  //   win.maximize();
+  // }
+  // document.getElementById("unmaximize-window-button").onclick = function() {
+  //   win.unmaximize();
+  // }
+  // document.getElementById("toggle-window-button").onclick = function() {
+  //   win.setFullScreen(!(win.isFullScreen()));
+  // }
+  // document.getElementById("maxmin-window-button").onclick = function() {
+  //   win.isMaximized() ? win.unmaximize() : win.maximize();
+  // }
 
-  document.getElementById("close-window-button").onclick = function() {
-    win.close();
-  }
-  document.getElementById("minimize-window-button").onclick = function() {
-    win.minimize();
-  }
-  document.getElementById("maximize-window-button").onclick = function() {
-    win.maximize();
-  }
-  document.getElementById("unmaximize-window-button").onclick = function() {
-    win.unmaximize();
-  }
-  document.getElementById("toggle-window-button").onclick = function() {
-    win.setFullScreen(!(win.isFullScreen()));
-  }
-  document.getElementById("maxmin-window-button").onclick = function() {
-    win.isMaximized() ? win.unmaximize() : win.maximize();
-  }
-
-  document.getElementById("min").onclick = function() {
-    win.minimize();
-  }
-  document.getElementById("max").onclick = function() {
-    win.isMaximized() ? win.unmaximize() : win.maximize();
-  }
-  document.getElementById("exit").onclick = function() {
-    win.close();
-  }
-
+  // document.getElementById("min").onclick = function() {
+  //   win.minimize();
+  // }
+  // document.getElementById("max").onclick = function() {
+  //   win.isMaximized() ? win.unmaximize() : win.maximize();
+  // }
+  // document.getElementById("exit").onclick = function() {
+  //   win.close();
+  // }
   document.getElementById("btn-minify").onclick = function() {
-    console.log("minify");
     win.minimize();
   }
+
   document.getElementById("btn-close").onclick = function() {
     win.close();
   }
