@@ -1,5 +1,4 @@
 const {app, BrowserWindow} = require('electron');
-const { Bootstrap } = require('bootstrap');
 let mainWindow;
 
 // Quit when all windows are closed.
