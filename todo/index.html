@@ -9,6 +9,25 @@
     <script src="js/frameless_window.js"></script>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style>
+      .menu-button {
+        float: right; 
+        border-radius: 100px; 
+        background-color: #888888;
+        width: 1rem; 
+        height :1rem;
+        margin: 5px 2px 5px 2px;
+      }
+      .bg-yellow {
+        background-color: #f1c40f; 
+      }
+      .bg-green {
+        background-color:#5eba00;
+      }
+      .bg-red {
+        background-color:#cd201f;
+      }
+    </style>
   </head>
 
   <body>
@@ -49,12 +68,16 @@
       <button id="exit">X</button>
     </div> -->
     <div id="header">
-      <span style="display:inline;">
-        <input type="button" value="1"style="border-radius: 100px; background-color:#ff0000; width:2rem; height:2rem;"/>
-        <input type="button" value="2"style="border-radius: 100px; background-color:#ff0000; width:2rem; height:2rem;"/>
-      </span>
-      <div style="border-radius: 100px; border: 3px solid #000; background-color:#ff0000; width:2rem; height:2rem;"></div>
-      <div style="border-radius: 100px; border: 3px solid #000; background-color:#ff0000; width:2rem; height:2rem;"></div>
+      <!-- <span style="display:inline;">
+        <input type="button" value="1"style="border-radius: 100px; background-color:#f1c40f; width:2rem; height:2rem;"/>
+        <input type="button" value="2"style="border-radius: 100px; background-color:#5eba00; width:2rem; height:2rem;"/>
+        <input type="button" value="2"style="border-radius: 100px; background-color:#cd201f; width:2rem; height:2rem;"/>
+      </span> -->
+      <div style="width:100%;display:inline; background-color: #a0a0a0">
+        <div id="btn-close" class="menu-button bg-red"></div>
+        <div id="btn-minify" class="menu-button bg-yellow"></div>
+        <div id="btn-maxify" class="menu-button bg-green"></div>
+      </div>
     </div>
     <div id="content">
       <div id="inner-content">

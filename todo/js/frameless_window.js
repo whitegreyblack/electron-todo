@@ -97,5 +97,13 @@ window.onload = function() {
     win.close();
   }
 
+  document.getElementById("btn-minify").onclick = function() {
+    console.log("minify");
+    win.minimize();
+  }
+  document.getElementById("btn-close").onclick = function() {
+    win.close();
+  }
+
   updateContentStyle();
 }
