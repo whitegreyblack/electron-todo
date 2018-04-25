@@ -1,11 +1,6 @@
 const {app, BrowserWindow, globalShortcut} = require('electron');
 let mainWindow;
 
-// Quit when all windows are closed.
-app.on('window-all-closed', function() {
-  app.quit();
-});
-
 app.on('browser-window-created', function(e, window) {
   // window.setMenu(null);
 });
@@ -20,7 +15,10 @@ app.on('ready', function() {
     maxWidth: 1225,
     maxHeight: 675, 
     frame: false,
-    resizable: false
+    resizable: false,
+    // webPreferences: {
+    //   nodeIntegration: false,
+    // }
   });
 
   mainWindow.once('ready-to-show', () => {
@@ -33,11 +31,16 @@ app.on('ready', function() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL('file://' + __dirname + '/todo/index.html');
+  mainWindow.loadURL(`file://${__dirname}/todo/index.html`);
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
     mainWindow = null;
   });
 
+});
+
+// Quit when all windows are closed.
+app.on('window-all-closed', function() {
+  app.quit();
 });
