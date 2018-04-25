@@ -1,11 +1,20 @@
 {
-  "name": "Snapit",
+  "name": "snapit",
   "version": "0.0.1",
   "main": "main.js",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.1.0",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.3",
+    "tabler": "^1.0.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "standard": {
+    "globals": [
+      "$"
+    ]
   }
 }

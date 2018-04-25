@@ -4,12 +4,11 @@ html {
   overflow: hidden;
 }
 
-/*
 body {
   margin: 0px;
   padding: 0px;
 }
-
+/*
 ::-webkit-scrollbar-thumb {
   display: none;
 }
@@ -194,10 +193,6 @@ div#inner-content {
 } */
 #content {
   position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 375px;
-  height: 675px;
 }
 
 #title-bar {
@@ -244,8 +239,6 @@ div#inner-content {
   background-color:#5eba00;
 }
 .bg-white {
-  width: 90%
-  border: 1px solid #eeeeee;
   background-color:#ffffff;
 }
 .bg-red {
