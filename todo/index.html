@@ -3,11 +3,21 @@
     <title>Todo App</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="css/feathericon.min.css" />
+    <style>
+      .card {
+        background: #f8f9fa; 
+        border: 1px solid rgba(0, 40, 100, 0.12); 
+        padding-left: 0.75rem; 
+        padding-right: 0.75rem;
+        box-sizing: border-box;
+        padding: 0.5rem 1.5rem;
+      }
+    </style>
   </head>
   <body style="background: #f8f9fa">
-    <div id="title-bar">
-      <img id="title-icon" src="static/tasks.png"/>
-      <div id="title-text">Todo List</div>
+    <div id="title-bar" style="border-bottom: 1px solid rgba(0, 40, 100, 0.12);">
       <div id="btn-close" class="menu-button bg-red"></div>
       <div id="btn-minify" class="menu-button bg-yellow"></div>
       <div id="btn-maxify" class="menu-button bg-white"></div>
@@ -16,25 +26,27 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
-            <div style="background: #f8f9fa; border: 1px solid rgba(0, 40, 100, 0.12); padding-left: 0.75rem; padding-right: 0.75rem;box-sizing: border-box;">
+            <div class="card">
               .col-6 .col-md-4
+              <br />
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <div class="input-group-append">
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fe fe-search">
+                    </i>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>        
           <div class="col-lg-8">
-            <div style="background: #f8f9fa; border: 1px solid rgba(0, 40, 100, 0.12); padding-left: 0.75rem; padding-right: 0.75rem;box-sizing: border-box;" >
+            <div class="card">
               .col-12 .col-md-8
             </div>
           </div>
         </div>
-        <div class="badge badge-default">badge</div>
-        <span class="badge badge-danger">Danger badge</span>
       </div>
-    </div>
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">@</span>
-      </div>
-      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
     </div>
   </body>
   <!-- Insert this line above script imports  -->
