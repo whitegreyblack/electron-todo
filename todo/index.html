@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body style="background: #f8f9fa">
     <div id="title-bar">
       <img id="title-icon" src="static/tasks.png"/>
       <div id="title-text">Todo List</div>
@@ -12,21 +12,30 @@
       <div id="btn-minify" class="menu-button bg-yellow"></div>
       <div id="btn-maxify" class="menu-button bg-white"></div>
     </div>
-    <div class="container">
+    <div class="my-3 my-md-5">
+      <div class="container">
         <div class="row">
-          <div class="col-6 col-md-4" style="border: 2px solid black;">.col-6 .col-md-4</div>        
-          <div class="col-12 col-md-8" style="border: 2px solid black;">.col-12 .col-md-8</div>
+          <div class="col-lg-4">
+            <div style="background: #f8f9fa; border: 1px solid rgba(0, 40, 100, 0.12); padding-left: 0.75rem; padding-right: 0.75rem;box-sizing: border-box;">
+              .col-6 .col-md-4
+            </div>
+          </div>        
+          <div class="col-lg-8">
+            <div style="background: #f8f9fa; border: 1px solid rgba(0, 40, 100, 0.12); padding-left: 0.75rem; padding-right: 0.75rem;box-sizing: border-box;" >
+              .col-12 .col-md-8
+            </div>
+          </div>
         </div>
         <div class="badge badge-default">badge</div>
         <span class="badge badge-danger">Danger badge</span>
       </div>
     </div>
     <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="basic-addon1">@</span>
-        </div>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">@</span>
       </div>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
   </body>
   <!-- Insert this line above script imports  -->
   <!-- <script>if ( typeof module === 'object' ) { window.module = module; module = undefined; }</script> -->
