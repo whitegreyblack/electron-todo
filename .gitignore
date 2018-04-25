@@ -1,2 +1,5 @@
 # No VS Code stuff
 .vscode/
+
+# Node modules -- have user install these separately
+node_modules

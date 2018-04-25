@@ -1,14 +1,9 @@
 <html>
-
   <head>
-
     <title>Todo App</title>
-
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/titlebar.js"></script>
-    <script src="js/frameless_window.js"></script>
   </head>
-
   <body>
     <div id="content">
       <div id="title-bar">
@@ -19,8 +14,12 @@
         <div id="btn-maxify" class="menu-button bg-white"></div>
       </div>
       <div id="inner-content">
+        <div class="label label-default">Label</div>
+        <span class="label label-danger">Danger Label</span>
       </div>
     </div>
   </body>
-
+  <script src="js/renderer.js"></script>
+  <script src="js/titlebar.js"></script>
+  <script src="js/frameless_window.js"></script>
 </html>

@@ -86,24 +86,26 @@ window.onload = function() {
   }
 
   // exit app keypress
-  document.onkeydown = function(event) {
-    var exitKey = false;
-    event = event || window.event;
+  // document.onkeydown = function(event) {
+  //   var exitKey = false;
+  //   event = event || window.event;
     
-    if ("key" in event) {
-      exitKey = (event.key == "Escape" || event.key == "Esc");
-    } else {
-      exitKey = (event.key == 27);
-    }
+  //   if ("key" in event) {
+  //     exitKey = (event.key == "Escape" || event.key == "Esc");
+  //   } else {
+  //     exitKey = (event.key == 27);
+  //   }
 
-    if (exitKey) {
-      document.getElementById("btn-close").click();
-    }
-  }
+  //   if (exitKey) {
+  //     document.getElementById("btn-close").click();
+  //   }
+  // }
+
   document.getElementById("title-bar").addEventListener("dblclick", function(event) {
     console.log("double click");
     event.preventDefault();
   }, false);
+
   updateContentStyle();
   
 }
