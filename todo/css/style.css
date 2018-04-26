@@ -7,12 +7,23 @@ html {
 body {
   margin: 0px;
   padding: 0px;
+  background: #f8f9fa;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+#screen-header {
+  width: 100%;
+  background-color: #bbbbbb;
+  display: inline-block;
+  border-bottom: 1px solid rgba(0, 40, 100, 0.12);
+  /* box-shadow: -1px 0 0 rgba(0, 40, 100, 0.12); */
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
 }
 /*
 ::-webkit-scrollbar-thumb {

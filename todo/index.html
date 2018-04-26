@@ -12,41 +12,58 @@
         padding-left: 0.75rem; 
         padding-right: 0.75rem;
         box-sizing: border-box;
-        padding: 0.5rem 1.5rem;
+        padding: 1.5rem 1.5rem;
+        height: 75%;
       }
     </style>
   </head>
-  <body style="background: #f8f9fa">
-    <div id="title-bar" style="border-bottom: 1px solid rgba(0, 40, 100, 0.12);">
-      <div id="btn-close" class="menu-button bg-red"></div>
-      <div id="btn-minify" class="menu-button bg-yellow"></div>
-      <div id="btn-maxify" class="menu-button bg-white"></div>
-    </div>
-    <div class="my-3 my-md-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              .col-6 .col-md-4
-              <br />
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                <div class="input-group-append">
-                  <button type="button" class="btn btn-secondary">
-                    <i class="fe fe-search">
-                    </i>
-                  </button>
+  <body>
+    <div class="screen">
+      <header id="screen-header">
+        <div id="btn-close" class="menu-button bg-red"></div>
+        <div id="btn-minify" class="menu-button bg-yellow"></div>
+        <div id="btn-maxify" class="menu-button bg-white"></div>
+      </header>
+      <div class="screen-main">
+        <div class="my-3 my-md-5">
+          <div class="container">
+            <h1>Placeholder</h1> 
+          </div>
+          <br />
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card">
+                    <div class="group-list" style="display: flex;">
+                      <i class="fe fe-sunrise" style="width: 32; font-size: 28px; color: #f1c40f;"></i>
+                      <div class="group-list-label" style="padding: 0 5px;">
+                        My Day
+                      </div>
+                    </div>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Today I want to..." 
+                             aria-label="pagetitle" aria-describedby="basic-addon1">
+                      <div class="input-group-append">
+                        <button type="button" class="btn btn-secondary">
+                          <i class="fe fe-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>        
+                <div class="col-lg-8">
+                  <div class="card">
+                    .col-12 .col-md-8
+                  </div>
                 </div>
               </div>
             </div>
-          </div>        
-          <div class="col-lg-8">
-            <div class="card">
-              .col-12 .col-md-8
-            </div>
-          </div>
         </div>
       </div>
+      <div class="footer">
+        footer stuff
+      </div>
+      <footer>Foot</footer>      
     </div>
   </body>
   <!-- Insert this line above script imports  -->
