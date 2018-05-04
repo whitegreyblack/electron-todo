@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="css/feathericon.min.css" />
+    <style>
+      .card {
+        background: #f8f9fa; 
+        border: 1px solid rgba(0, 40, 100, 0.12); 
+        padding-left: 0.75rem; 
+        padding-right: 0.75rem;
+        box-sizing: border-box;
+        padding: 1.5rem 1.5rem;
+        height: 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidenav">
+
+    </div>
+    <div class="screen">
+      
+      <header id="screen-header">
+        <div id="btn-close" class="menu-button bg-red"></div>
+        <div id="btn-minify" class="menu-button bg-yellow"></div>
+        <div id="btn-maxify" class="menu-button bg-white"></div>
+      </header>
+
+      <div class="screen-main">
+        <div class="my-2">
+          <div class="container" style="padding-top: 8px;">
+            <h1>Placeholder</h1> 
+          </div>
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card">
+                    <ul class="list-group" style="display: flex;">
+                      <li class="list-group-item" style="vertical-align: middle;">
+                        <i class="fe fe-sunrise" style="padding-top: 6px; width: 32; height: 32; vertical-align: center; text-align: center; color: #f1c40f;"></i>
+                          My Day
+                      </li>
+                      <li class="list-group-item">
+                        <i class="fe fe-sunrise" style="padding-top: 6px; width: 32; height: 32; vertical-align: center; text-align: center; color: #f1c40f;"></i>
+                          My Day
+                      </li>
+                    </ul>
+
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Today I want to..." 
+                             aria-label="pagetitle" aria-describedby="basic-addon1">
+                      <div class="input-group-append">
+                        <button type="button" class="btn btn-secondary">
+                          <i class="fe fe-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>     
+
+                <div class="col-lg-8">
+                  <!-- <div class="card"> -->
+                    <div class="list-group-item">
+                      <li class="list-group-item">One Task</li>
+                      <li class="list-group-item">Two Task</li>
+                      <li class="list-group-item">Red Task</li>
+                      <li class="list-group-item">Blue Task</li>
+                    </div>
+                  <!-- </div> -->
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- <div class="footer">footer stuff</div>
+      <footer>Foot</footer>       -->
+    </div>
+  </body>
+  <!-- Insert this line above script imports  -->
+  <!-- <script>if ( typeof module === 'object' ) { window.module = module; module = undefined; }</script> -->
+
+  <script src="js/renderer.js"></script>
+  <script src="js/titlebar.js"></script>
+  <script src="js/frameless_window.js"></script>
+
+  <!-- Insert this line after script imports -->
+  <!-- <script>if ( window.module ) { module = window.module; }</script> -->
+</html>

@@ -6,72 +6,63 @@
     <link rel="stylesheet" href="css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="css/feathericon.min.css" />
     <style>
-      .card {
-        background: #f8f9fa; 
-        border: 1px solid rgba(0, 40, 100, 0.12); 
-        padding-left: 0.75rem; 
-        padding-right: 0.75rem;
-        box-sizing: border-box;
-        padding: 1.5rem 1.5rem;
-        height: 75%;
+      body {
+          font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+          width: 130px;
+          position: fixed;
+          z-index: 0;
+          top: 20px;
+          left: 10px;
+          background: #eee;
+          overflow-x: hidden;
+          padding: 12px 0;
+      }
+
+      .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #2196F3;
+          display: block;
+      }
+
+      .sidenav a:hover {
+          color: #064579;
+      }
+
+      .main {
+          margin-left: 140px; /* Same width as the sidebar + left position in px */
+          font-size: 28px; /* Increased text to enable scrolling */
+          padding: 0px 10px;
+      }
+
+      @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
       }
     </style>
   </head>
   <body>
+    <div class="sidenav">
+
+    </div>
     <div class="screen">
+      
       <header id="screen-header">
         <div id="btn-close" class="menu-button bg-red"></div>
         <div id="btn-minify" class="menu-button bg-yellow"></div>
         <div id="btn-maxify" class="menu-button bg-white"></div>
       </header>
-      <div class="screen-main">
-        <div class="my-2">
-          <div class="container" style="padding-top: 8px;">
-            <h1>Placeholder</h1> 
-          </div>
-          <div class="container">
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="card">
-                    <ul class="list-group" style="display: flex;">
-                      <li class="list-group-item" style="vertical-align: middle;">
-                        <i class="fe fe-sunrise" style="padding-top: 6px; width: 32; height: 32; vertical-align: center; text-align: center; color: #f1c40f;"></i>
-                          My Day
-                      </li>
-                      <li class="list-group-item">
-                        <i class="fe fe-sunrise" style="padding-top: 6px; width: 32; height: 32; vertical-align: center; text-align: center; color: #f1c40f;"></i>
-                          My Day
-                      </li>
-                    </ul>
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Today I want to..." 
-                             aria-label="pagetitle" aria-describedby="basic-addon1">
-                      <div class="input-group-append">
-                        <button type="button" class="btn btn-secondary">
-                          <i class="fe fe-plus"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>        
-                <div class="col-lg-8">
-                  <!-- <div class="card"> -->
-                    <div class="list-group-item">
-                      <li class="list-group-item">One Task</li>
-                      <li class="list-group-item">Two Task</li>
-                      <li class="list-group-item">Red Task</li>
-                      <li class="list-group-item">Blue Task</li>
-                    </div>
-                  <!-- </div> -->
-                </div>
-              </div>
-            </div>
+
+      <div class="sidenav">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#clients">Clients</a>
+          <a href="#contact">Contact</a>
         </div>
-      </div>
-      <div class="footer">
-        footer stuff
-      </div>
-      <footer>Foot</footer>      
     </div>
   </body>
   <!-- Insert this line above script imports  -->
