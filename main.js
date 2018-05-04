@@ -14,8 +14,8 @@ app.on('ready', function() {
     height: 675, 
     maxWidth: 1225,
     maxHeight: 675, 
-    frame: false,
-    resizable: false,
+    // frame: false,
+    // resizable: false,
     // webPreferences: {
     //   nodeIntegration: false,
     // }
